@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Resources | Kayo Pulse</title>
+<link rel="canonical" href="https://kayopulse.com/resources/privacy-policy">
+<meta name="description" content="Kayo Pulse privacy policy covering data collection, handling, security, and retention practices.">
+<meta property="og:title" content="Privacy Policy — Resources | Kayo Pulse">
+<meta property="og:description" content="Kayo Pulse privacy policy covering data collection, handling, security, and retention practices.">
+<meta property="og:image" content="https://kayopulse.com/kayopulse.png">
+<meta property="og:url" content="https://kayopulse.com/resources/privacy-policy">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Privacy Policy — Resources | Kayo Pulse">
+<meta name="twitter:description" content="Kayo Pulse privacy policy covering data collection, handling, security, and retention practices.">
+<meta name="twitter:image" content="https://kayopulse.com/kayopulse.png">
+<link rel="icon" href="../Favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../kayopulse.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="../kayopulse.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;color:#1a1a2e;background:#ffffff;line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,h5{font-family:'Poppins',sans-serif;font-weight:700;line-height:1.12}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.92);backdrop-filter:blur(16px);border-bottom:1px solid #eaeef2;height:88px;display:flex;align-items:center;justify-content:space-between;padding:0 24px}
+.nav-inner{max-width:1200px;margin:0 auto;width:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-logo img{height:80px;width:auto}
+.nav-links{display:flex;align-items:center;gap:8px}
+.nav-links a:not(.nav-cta){font-size:14px;font-weight:500;color:#4a5568;transition:color 0.2s}
+.nav-links a:not(.nav-cta):hover{color:#2563eb}
+.nav-cta{background:#2563eb;color:#fff !important;padding:10px 22px;border-radius:8px;font-size:13px;font-weight:600;margin-left:16px;transition:background 0.2s,transform 0.15s}
+.nav-cta:hover{background:#1d4ed8;transform:translateY(-1px)}
+.nav-toggle{display:none;align-items:center;justify-content:center;width:40px;height:40px;border:none;background:transparent;cursor:pointer;color:#4a5568}
+.nav-toggle span{display:block;width:20px;height:2px;background:currentColor;border-radius:2px;transition:transform 0.2s,opacity 0.2s}
+.nav-toggle span+span{margin-top:6px}
+.nav-open .nav-toggle span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.nav-open .nav-toggle span:nth-child(2){opacity:0}
+.nav-open .nav-toggle span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+.nav-item{position:relative;display:flex;align-items:center}
+.nav-top{display:flex;align-items:center;gap:5px;padding:10px 12px;cursor:pointer}
+.nav-top svg{transition:transform 0.2s}
+.nav-item:hover .nav-top svg,.nav-item:focus-within .nav-top svg{transform:rotate(180deg)}
+.dropdown{position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%) translateY(6px);background:#fff;border:1px solid #eaeef2;border-radius:12px;box-shadow:0 16px 40px rgba(0,0,0,0.1);padding:8px;min-width:210px;opacity:0;visibility:hidden;transition:opacity 0.2s,transform 0.2s,visibility 0.2s;z-index:50}
+.nav-item:hover .dropdown,.nav-item:focus-within .dropdown{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+.dropdown a{display:block;padding:9px 14px;border-radius:8px;font-size:13px;font-weight:500;white-space:nowrap}
+.dropdown a:hover{background:#eff6ff;color:#2563eb}
+.dropdown a.active{color:#2563eb;background:#eff6ff}
+@media(max-width:768px){
+  .nav-toggle{display:flex}
+  .nav-links{display:none;position:absolute;top:88px;left:0;right:0;background:#fff;border-bottom:1px solid #eaeef2;padding:16px 24px;flex-direction:column;align-items:stretch;gap:4px;box-shadow:0 8px 24px rgba(0,0,0,0.06);max-height:calc(100vh - 88px);overflow-y:auto}
+  .nav-open .nav-links{display:flex}
+  .nav-item{flex-direction:column;align-items:flex-start;width:100%}
+  .nav-top{padding:10px 0}
+  .dropdown{position:static;transform:none;opacity:1;visibility:visible;box-shadow:none;border:none;padding:0 0 8px 14px;min-width:0;display:flex;flex-direction:column;gap:2px}
+  .nav-cta{margin-left:0;margin-top:8px;text-align:center}
+}
+
+/* PAGE TITLE */
+.page-title{position:relative;overflow:hidden;padding:150px 24px 44px;background:linear-gradient(135deg,#eff6ff 0%,#ffffff 60%)}
+.title-glow{position:absolute;top:-90px;right:-90px;width:360px;height:360px;background:radial-gradient(circle,rgba(37,99,235,0.10) 0%,transparent 70%);filter:blur(20px);pointer-events:none;animation:floatSlow 8s ease-in-out infinite}
+.title-glow-2{position:absolute;bottom:-80px;left:10%;width:260px;height:260px;background:radial-gradient(circle,rgba(56,189,248,0.10) 0%,transparent 70%);filter:blur(24px);pointer-events:none;animation:floatSlow 10s ease-in-out infinite reverse}
+@keyframes floatSlow{0%,100%{transform:translateY(0) translateX(0)}50%{transform:translateY(-18px) translateX(8px)}}
+.page-crumb{position:relative;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#2563eb;margin-bottom:10px}
+.page-title h1{position:relative;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:800;letter-spacing:-0.02em;color:#1a1a2e;margin-bottom:10px;max-width:760px}
+.page-title p{position:relative;color:#4a5568;font-size:1rem;line-height:1.7;max-width:640px}
+
+/* SUB NAV */
+.subtabs{display:flex;gap:8px;margin:0 0 28px;flex-wrap:wrap}
+.subtab{padding:10px 22px;border-radius:100px;font-size:13px;font-weight:600;color:#4a5568;background:#f3f6fb;border:1px solid transparent;transition:all 0.2s}
+.subtab.active{background:#2563eb;color:#fff}
+.subtab:hover:not(.active){background:#eff6ff;color:#2563eb;transform:translateY(-1px)}
+
+/* POLICY PAGE */
+.policy-section{padding:0 24px 72px}
+.policy-shell{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:260px minmax(0,1fr);gap:52px;align-items:start}
+.policy-toc{position:sticky;top:110px;padding:12px 0 0}
+.policy-toc .label{font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#6b7280;margin-bottom:18px}
+.policy-toc a{display:block;padding:8px 0 8px 12px;border-left:2px solid #e5e7eb;color:#4a5568;font-size:13px;line-height:1.5;transition:all 0.2s}
+.policy-toc a:hover,.policy-toc a.active{border-left-color:#2563eb;color:#2563eb}
+.policy-content{min-width:0}
+.policy-card{background:#fff;border:1px solid #eaeef2;border-radius:18px;padding:26px 28px;box-shadow:0 12px 30px rgba(15,23,42,0.04)}
+.policy-intro{margin-bottom:20px}
+.policy-intro p{color:#4a5568;font-size:15px;line-height:1.8;margin-bottom:16px}
+.policy-intro .pill{display:inline-flex;align-items:center;gap:8px;background:#eff6ff;border:1px solid #bfdbfe;color:#2563eb;padding:8px 14px;border-radius:999px;font-size:12px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase}
+.policy-block{padding-top:8px;margin-bottom:34px}
+.policy-block h2{font-size:clamp(1.25rem,2vw,1.8rem);font-weight:800;letter-spacing:-0.02em;color:#1a1a2e;margin-bottom:16px;scroll-margin-top:100px}
+.policy-block h3{font-size:1rem;font-weight:700;color:#1a1a2e;margin:22px 0 10px}
+.policy-block p,.policy-block li{font-size:15px;color:#4a5568;line-height:1.85}
+.policy-block p{margin-bottom:14px;max-width:68ch}
+.policy-block ul,.policy-block ol{padding-left:20px;margin:0 0 16px}
+.policy-block li{margin-bottom:8px}
+.policy-block strong{color:#1a1a2e}
+.policy-block .note{background:#f8fafc;border:1px solid #eaeef2;border-left:4px solid #2563eb;border-radius:12px;padding:16px 18px;margin:14px 0 18px}
+.policy-block .two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:12px}
+.policy-block .mini-card{background:#f9fafb;border:1px solid #eaeef2;border-radius:12px;padding:16px 18px}
+.policy-block .mini-card h4{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#2563eb;margin-bottom:8px}
+.policy-block .mini-card p{font-size:13px;line-height:1.7;margin:0}
+.contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:18px}
+.contact-item{background:#f9fafb;border:1px solid #eaeef2;border-radius:12px;padding:16px 18px}
+.contact-item .label{display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#6b7280;margin-bottom:6px}
+.contact-item .value{font-size:14px;color:#1a1a2e}
+@media(max-width:900px){
+  .policy-shell{grid-template-columns:1fr}
+  .policy-toc{position:static;padding:0 0 12px;border-bottom:1px solid #eaeef2}
+  .policy-toc .label{margin-bottom:10px}
+  .policy-toc a{display:inline-block;border:none;padding:8px 12px;border-radius:999px;margin:0 8px 8px 0;background:#f3f6fb}
+  .policy-toc a.active{background:#eff6ff;border:none}
+  .policy-block .two-col,.contact-grid{grid-template-columns:1fr}
+}
+
+/* FOOTER */
+footer{background:#0f172a;padding:72px 24px 28px}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr;gap:28px;margin-bottom:28px}
+.fbrand h4{font-size:1.2rem;font-weight:800;letter-spacing:0.12em;color:#fff;margin-bottom:14px}
+.fbrand p{color:#cbd5e1;font-size:14px;line-height:1.8;max-width:420px}
+.fbrand a{color:#93c5fd}
+.newsletter{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.newsletter input{flex:1;min-width:160px;padding:12px 14px;border-radius:8px;border:1px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.04);color:#fff;font-size:14px}
+.newsletter input::placeholder{color:#94a3b8}
+.newsletter button{background:#2563eb;color:#fff;border:none;border-radius:8px;padding:12px 16px;font-size:13px;font-weight:600;cursor:pointer;transition:background 0.2s}
+.newsletter button:hover{background:#1d4ed8}
+#nl-msg{font-size:12px;color:#93c5fd;margin-top:8px;display:none}
+.fcol h5{font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#94a3b8;margin-bottom:14px}
+.fcol a{display:block;color:#e2e8f0;font-size:14px;line-height:2.1;opacity:0.9}
+.fcol a:hover{color:#fff}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;padding-top:24px;border-top:1px solid rgba(148,163,184,0.2);gap:18px;flex-wrap:wrap}
+.footer-bottom p{color:#cbd5e1;font-size:13px}
+.flinks{display:flex;gap:18px;flex-wrap:wrap}
+.flinks a{color:#cbd5e1;font-size:13px}
+.flinks a:hover{color:#fff}
+@media(max-width:980px){.footer-top{grid-template-columns:1fr 1fr 1fr;}.fbrand{grid-column:span 3}}
+@media(max-width:640px){
+  .footer-top{grid-template-columns:1fr}
+  .fbrand{grid-column:auto}
+  .footer-bottom{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="../index.html" aria-label="Kayo Pulse home">
+      <img src="../kayopulse.png" alt="Kayo Pulse logo">
+    </a>
+    <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <div class="nav-item">
+        <a href="../why/company.html" class="nav-top">Why Kayo Pulse <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="dropdown">
+          <a href="../why/company.html" class="">About</a>
+          <a href="../why/leadership.html" class="">Leadership</a>
+          <a href="../why/careers.html" class="">Careers</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="../platform/esg-monitoring.html" class="nav-top">Platform <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="dropdown">
+          <a href="../platform/esg-monitoring.html" class="">ESG Monitoring</a>
+          <a href="../platform/eudr-compliance.html" class="">EUDR Compliance</a>
+          <a href="../platform/dmrv.html" class="">dMRV</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="../solutions/decarbonize-africa.html" class="nav-top">Solutions <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="dropdown">
+          <a href="../solutions/decarbonize-africa.html" class="">Decarbonize Africa</a>
+          <a href="../solutions/climate-nature-risk.html" class="">Climate &amp; Nature Risk</a>
+          <a href="../solutions/compliance.html" class="">Compliance</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="../resources/research-papers.html" class="nav-top">Resources <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="dropdown">
+          <a href="../resources/research-papers.html" class="">Research Papers</a>
+          <a href="../resources/webinars.html" class="">Webinars</a>
+          <a href="../resources/insights.html" class="">Insights</a>
+          <a href="../resources/privacy-policy.html" class="active">Privacy Policy</a>
+        </div>
+      </div>
+      <a href="#" class="nav-cta" onclick="openDemoModal();return false">Book a Demo</a>
+    </div>
+  </div>
+</nav>
+
+<section class="page-title">
+  <div class="title-glow"></div>
+  <div class="title-glow-2"></div>
+  <div class="container">
+    <div class="page-crumb">Resources</div>
+    <h1>Privacy Policy</h1>
+    <p>How Kayo Pulse collects, protects, and manages personal and operational information across every engagement.</p>
+  </div>
+</section>
+
+<section class="policy-section">
+  <div class="container">
+    <div class="subtabs">
+      <a href="../resources/research-papers.html" class="subtab">Research Papers</a>
+      <a href="../resources/webinars.html" class="subtab">Webinars</a>
+      <a href="../resources/insights.html" class="subtab">Insights</a>
+      <a href="../resources/privacy-policy.html" class="subtab active">Privacy Policy</a>
+    </div>
+
+    <div class="policy-shell">
+      <aside class="policy-toc" aria-label="Page sections">
+        <div class="label">On this page</div>
+        <a href="#overview" class="active">Overview</a>
+        <a href="#scope">Scope</a>
+        <a href="#data-we-collect">Data We Collect</a>
+        <a href="#lawful-use">Lawful Use</a>
+        <a href="#principles">Our Principles</a>
+        <a href="#confidentiality">Confidentiality</a>
+        <a href="#security">Security</a>
+        <a href="#retention">Retention</a>
+        <a href="#sharing">Sharing &amp; Transfers</a>
+        <a href="#your-rights">Your Rights</a>
+        <a href="#complaints">Complaints</a>
+        <a href="#contact">Contact</a>
+      </aside>
+
+      <main class="policy-content">
+        <div class="policy-card">
+          <div class="policy-intro">
+            <span class="pill">Effective September 2026</span>
+            <p>At Kayo Pulse, we are committed to protecting privacy and managing data responsibly across our platform, services, partnerships, and projects. This policy outlines how we collect, use, store, process, and safeguard personal data in line with applicable law and good practice.</p>
+          </div>
+
+          <section class="policy-block" id="overview">
+            <h2>Overview</h2>
+            <p>Kayo Pulse Limited is committed to protecting personal data, safeguarding confidential information, and promoting the responsible use of data across its software, systems, programmes, services, and external engagements.</p>
+            <p>This Privacy Policy explains how we collect, use, store, and protect information when you interact with Kayo Pulse — whether through our platform, a software subscription, a pilot programme, project implementation, partnership, or any other authorised engagement.</p>
+            <div class="note">
+              This policy applies to all external parties engaging with Kayo Pulse. Where a separate Data Processing Agreement or programme-specific policy also applies, those documents should be read together with this policy. In case of inconsistency, applicable law and any signed agreement take precedence.
+            </div>
+          </section>
+
+          <section class="policy-block" id="scope">
+            <h2>Scope</h2>
+            <p>This policy covers:</p>
+            <ul>
+              <li>All personal data processed by Kayo Pulse Limited — automated or non-automated, in any format, including printed documents, digital files, images, and audio recordings.</li>
+              <li>All Kayo Pulse operations within and outside Kenya in relation to data subjects located in Kenya.</li>
+              <li>All Kayo Pulse employees and third parties who engage with Kayo Pulse.</li>
+            </ul>
+          </section>
+
+          <section class="policy-block" id="data-we-collect">
+            <h2>Data We Collect</h2>
+            <p>Depending on how you engage with Kayo Pulse, we may collect the following types of information:</p>
+
+            <h3>Personal Data</h3>
+            <p>Any information relating to an identified or identifiable natural person — such as your name, email address, phone number, or organisational affiliation — that you provide when using our services, entering into agreements, or corresponding with us.</p>
+
+            <h3>Sensitive Personal Data</h3>
+            <p>Information classified as sensitive under applicable data protection laws, including data relating to health, biometric characteristics, genetic data, racial or ethnic origin, and property details. We collect and process such data only where a lawful basis exists and appropriate safeguards are in place.</p>
+
+            <h3>Environmental &amp; Geospatial Data</h3>
+            <p>Information relating to environmental conditions — land cover, forest cover, biomass, vegetation, soil, water, biodiversity, greenhouse gas emissions — and information associated with a geographic location, including coordinates, boundaries, satellite imagery, GPS records, and plot boundaries. This data is core to Kayo Pulse's Earth observation and ESG platform services.</p>
+
+            <h3>Confidential Information</h3>
+            <p>Non-public business, commercial, financial, technical, operational, project, client, partner, or other information disclosed or made accessible through an engagement with Kayo Pulse.</p>
+          </section>
+
+          <section class="policy-block" id="lawful-use">
+            <h2>Lawful Use of Your Data</h2>
+            <p>Kayo Pulse processes personal data on one or more of the following lawful bases under the Kenya Data Protection Act, 2019:</p>
+            <ul>
+              <li><strong>Consent</strong> — where you have given clear, informed consent for a specific purpose.</li>
+              <li><strong>Contractual necessity</strong> — where processing is required to perform a contract to which you are a party, or to take steps at your request before entering into a contract.</li>
+              <li><strong>Legal obligation</strong> — where we are required to process your data to comply with a legal or regulatory requirement.</li>
+              <li><strong>Vital interests</strong> — where processing is necessary to protect the vital interests of you or another person.</li>
+              <li><strong>Public interest or official authority</strong> — where processing is necessary for a task carried out in the public interest or in the exercise of official authority.</li>
+              <li><strong>Legitimate interests</strong> — where processing is necessary for our legitimate interests or those of a third party, provided those interests are not overridden by your rights and freedoms.</li>
+            </ul>
+          </section>
+
+          <section class="policy-block" id="principles">
+            <h2>Our Data Protection Principles</h2>
+            <p>All information handling across Kayo Pulse systems and engagements observes the following principles:</p>
+            <div class="two-col">
+              <div class="mini-card">
+                <h4>Lawfulness &amp; Transparency</h4>
+                <p>Information is handled lawfully, fairly, and transparently, with appropriate notice provided to affected individuals.</p>
+              </div>
+              <div class="mini-card">
+                <h4>Purpose Limitation</h4>
+                <p>Data is collected and used only for specified, explicit, and legitimate purposes — never repurposed without a lawful basis.</p>
+              </div>
+              <div class="mini-card">
+                <h4>Data Minimisation</h4>
+                <p>Only information that is necessary for the relevant engagement or service is collected or shared.</p>
+              </div>
+              <div class="mini-card">
+                <h4>Accuracy</h4>
+                <p>Reasonable steps are taken to ensure information is accurate, complete, and updated where necessary.</p>
+              </div>
+              <div class="mini-card">
+                <h4>Storage Limitation</h4>
+                <p>Personal data is not retained longer than necessary for the purpose for which it was collected.</p>
+              </div>
+              <div class="mini-card">
+                <h4>Integrity &amp; Confidentiality</h4>
+                <p>Appropriate safeguards protect information against unauthorised access, loss, alteration, or disclosure.</p>
+              </div>
+              <div class="mini-card">
+                <h4>Accountability</h4>
+                <p>Kayo Pulse can demonstrate compliance with applicable data protection responsibilities at all times.</p>
+              </div>
+              <div class="mini-card">
+                <h4>Cross-border Protection</h4>
+                <p>Personal data transferred outside Kenya complies with the requirements of the Kenya Data Protection Act, 2019.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="policy-block" id="confidentiality">
+            <h2>Confidentiality &amp; Intellectual Property</h2>
+            <p>Information exchanged through Kayo Pulse engagements may contain confidential business, technical, financial, or project information. Kayo Pulse and all external parties with access to such information are required to:</p>
+            <ul>
+              <li>Maintain the confidentiality of non-public information received through the engagement.</li>
+              <li>Use confidential information only for the purpose for which it was disclosed.</li>
+              <li>Not disclose confidential information to unauthorised persons or organisations.</li>
+              <li>Ensure that employees, consultants, and subcontractors with access to confidential information are bound by appropriate confidentiality obligations.</li>
+              <li>Protect confidential information using reasonable technical and organisational safeguards.</li>
+              <li>Return or securely delete confidential information when required by the applicable agreement or upon termination of the engagement.</li>
+            </ul>
+            <p>Nothing in this policy transfers ownership of intellectual property between Kayo Pulse and an external party. Ownership and permitted use of software, source code, platform architecture, databases, methodologies, reports, models, designs, and datasets are governed by applicable licences, contracts, NDAs, or other written arrangements.</p>
+          </section>
+
+          <section class="policy-block" id="security">
+            <h2>Security</h2>
+            <p>Kayo Pulse has implemented appropriate technical and organisational security measures to protect personal data effectively. These include:</p>
+            <ul>
+              <li>Access to personal data is limited to personnel who require it, with appropriate access controls in place to prevent unauthorised sharing.</li>
+              <li>Destruction or deletion of personal data — whether printed or electronic — is carried out so that records are rendered irrecoverable.</li>
+              <li>Appropriate backup and disaster recovery solutions are maintained.</li>
+              <li>Kayo Pulse employees are bound by Non-Disclosure Agreements. Knowingly or recklessly disclosing personal information to third parties is a disciplinary offence.</li>
+              <li>Third-party service providers are required to provide sufficient guarantees of data protection and must act only on instructions received from Kayo Pulse.</li>
+            </ul>
+            <p>Kayo Pulse will undertake a Data Protection Impact Assessment (DPIA) whenever a processing operation is likely to result in a high risk to the rights and freedoms of data subjects.</p>
+          </section>
+
+          <section class="policy-block" id="retention">
+            <h2>Data Retention, Return &amp; Deletion</h2>
+            <p>Information is retained only for as long as is necessary to fulfil the purpose for which it was collected or processed, and subject to applicable contractual, operational, regulatory, and legal requirements.</p>
+            <p>Once the retention period has expired, or upon valid request, personal data will be securely deleted or returned as appropriate. Electronic records are deleted using methods that make recovery or retrieval practically impossible.</p>
+          </section>
+
+          <section class="policy-block" id="sharing">
+            <h2>Sharing &amp; International Transfers</h2>
+            <p>Kayo Pulse does not sell personal data. We do not disclose personal data or confidential information to unauthorised third parties.</p>
+            <p>Information may be shared where necessary for the following purposes:</p>
+            <ul>
+              <li>Delivering contracted services and operating Kayo Pulse systems.</li>
+              <li>Engaging authorised technology providers, consultants, and subcontractors.</li>
+              <li>Meeting legal, regulatory, or contractual obligations.</li>
+              <li>Supporting project monitoring, reporting, auditing, and verification.</li>
+              <li>Facilitating approved partnerships and programme implementation.</li>
+              <li>Responding to lawful requests from competent authorities.</li>
+            </ul>
+            <p>Where personal data is shared with a third-party service provider, Kayo Pulse takes reasonable steps to ensure that appropriate contractual, technical, and organisational safeguards are in place.</p>
+
+            <h3>Transfers Outside Kenya</h3>
+            <p>Personal data is transferred outside Kenya only where:</p>
+            <ul>
+              <li>The destination jurisdiction has commensurate data protection laws, or appropriate safeguards are in place; and</li>
+              <li>The transfer is necessary for the purpose for which the data was originally collected.</li>
+            </ul>
+            <p>All cross-border transfers comply with the requirements of the Kenya Data Protection Act, 2019 and relevant regulations.</p>
+          </section>
+
+          <section class="policy-block" id="your-rights">
+            <h2>Your Rights</h2>
+            <p>As a data subject, you have rights under the Kenya Data Protection Act, 2019. These include the right to:</p>
+            <ul>
+              <li><strong>Access</strong> — ask whether we hold personal data about you and request a copy of that data and information about how it is processed.</li>
+              <li><strong>Rectification</strong> — request that inaccurate or incomplete personal data be corrected.</li>
+              <li><strong>Erasure</strong> — request deletion of personal data that is no longer necessary for the purposes for which it was collected, or where it has been processed unlawfully.</li>
+              <li><strong>Restriction</strong> — request that we restrict processing of your personal data in certain circumstances.</li>
+              <li><strong>Objection</strong> — object to the processing of your personal data, including for direct marketing purposes.</li>
+              <li><strong>Portability</strong> — request the transfer of personal data you have provided to us, in a structured and commonly used format, where processing is based on consent or a contract.</li>
+              <li><strong>Withdraw consent</strong> — where we process your data on the basis of consent, you may withdraw that consent at any time, and we will cease processing for that purpose.</li>
+            </ul>
+            <p>To exercise any of these rights, please contact us at <a href="mailto:info@kayopulse.com">info@kayopulse.com</a>.</p>
+          </section>
+
+          <section class="policy-block" id="complaints">
+            <h2>Complaints</h2>
+            <p>If you have concerns about how Kayo Pulse collects, processes, stores, discloses, or uses your personal data, you may submit a complaint to us directly.</p>
+            <p>We will acknowledge your complaint within <strong>7 working days</strong> and investigate the matter within <strong>30 working days</strong>. If additional time or information is required, we will notify you before the initial period expires. The outcome will be communicated to you in writing by email.</p>
+            <p>If you are dissatisfied with our response, you may request a review of the decision. You also have the right to lodge a complaint directly with Kenya's Office of the Data Protection Commissioner (ODPC) through its official channels.</p>
+
+            <h3>Data Breach Notification</h3>
+            <p>In line with regulatory requirements, Kayo Pulse will report any data breach to the Data Protection Commissioner within <strong>72 hours</strong> of becoming aware of it. Where the identity of affected data subjects can be established, Kayo Pulse will also communicate the breach to those individuals as soon as practicable.</p>
+          </section>
+
+          <section class="policy-block" id="contact">
+            <h2>Contact Us</h2>
+            <p>For any questions, requests, or concerns relating to this Privacy Policy or the handling of your personal data, please reach out to us:</p>
+            <div class="contact-grid">
+              <div class="contact-item">
+                <span class="label">Email</span>
+                <span class="value"><a href="mailto:info@kayopulse.com">info@kayopulse.com</a></span>
+              </div>
+              <div class="contact-item">
+                <span class="label">Company</span>
+                <span class="value">Kayo Pulse Limited</span>
+              </div>
+              <div class="contact-item">
+                <span class="label">Location</span>
+                <span class="value">Nairobi, Kenya</span>
+              </div>
+              <div class="contact-item">
+                <span class="label">Regulator</span>
+                <span class="value"><a href="https://www.odpc.go.ke" target="_blank" rel="noopener">Office of the Data Protection Commissioner (ODPC)</a></span>
+              </div>
+            </div>
+
+            <h3>Policy Review</h3>
+            <p>This Privacy Policy is reviewed every two years to ensure it remains current with applicable laws and best practice. Kayo Pulse management is responsible for authorising any updates. This policy should be read in conjunction with Kayo Pulse Limited's Code of Conduct.</p>
+            <p style="margin-top:1.5rem;font-size:13px;color:#6b7280;">Last revised: November 2026 · Approved by Kayo Pulse Limited Management</p>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="fbrand">
+        <h4>KAYO PULSE</h4>
+        <p>Earth Observation infrastructure for ESG Monitoring, Carbon, and Traceability — powering the next generation of geospatial intelligence from <a href="https://kayopulse.com">kayopulse.com</a>.</p>
+        <div class="newsletter">
+          <input type="email" id="nl-email" placeholder="your@company.com">
+          <button onclick="subscribeNewsletter()">Subscribe to Intelligence Briefings</button>
+        </div>
+        <div id="nl-msg">✓ You're subscribed!</div>
+      </div>
+      <div class="fcol">
+        <h5>Platform</h5>
+        <a href="../platform/esg-monitoring.html">ESG Monitoring</a>
+        <a href="../platform/eudr-compliance.html">EUDR Compliance</a>
+        <a href="../platform/dmrv.html">dMRV</a>
+      </div>
+      <div class="fcol">
+        <h5>Solutions</h5>
+        <a href="../solutions/decarbonize-africa.html">Decarbonize Africa</a>
+        <a href="../solutions/climate-nature-risk.html">Climate &amp; Nature Risk</a>
+        <a href="../solutions/compliance.html">Compliance</a>
+      </div>
+      <div class="fcol">
+        <h5>Resources</h5>
+        <a href="../resources/research-papers.html">Research Papers</a>
+        <a href="../resources/webinars.html">Webinars</a>
+        <a href="../resources/insights.html">Insights</a>
+        <a href="../resources/privacy-policy.html">Privacy Policy</a>
+      </div>
+      <div class="fcol">
+        <h5>Company</h5>
+        <a href="../why/company.html">About</a>
+        <a href="../why/careers.html">Careers</a>
+        <a href="mailto:partnerships@kayopulse.com">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Kayo Pulse Ltd. All rights reserved.</p>
+      <div class="flinks">
+        <a href="../resources/privacy-policy.html">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Header mobile nav
+(function(){
+  const nav=document.querySelector('nav');
+  const btn=document.getElementById('nav-toggle');
+  if(btn&&nav){
+    btn.addEventListener('click',function(e){
+      e.stopPropagation();
+      nav.classList.toggle('nav-open');
+      btn.setAttribute('aria-expanded',nav.classList.contains('nav-open')?'true':'false');
+    });
+    document.addEventListener('click',function(e){
+      if(!nav.contains(e.target)){
+        nav.classList.remove('nav-open');
+        btn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+})();
+
+// TOC highlight on scroll
+const sections=document.querySelectorAll('.policy-block[id]');
+const tocLinks=document.querySelectorAll('.policy-toc a');
+function updateTOC(){
+  let current='';
+  sections.forEach(section=>{
+    if(window.scrollY >= section.offsetTop - 120) current=section.id;
+  });
+  tocLinks.forEach(link=>{
+    const active = link.getAttribute('href') === '#' + current;
+    link.classList.toggle('active', active);
+  });
+}
+window.addEventListener('scroll', updateTOC, { passive: true });
+updateTOC();
+
+function subscribeNewsletter(){
+  const input=document.getElementById('nl-email');
+  const msg=document.getElementById('nl-msg');
+  if(!input || !msg) return;
+  const email=input.value.trim();
+  if(!email){
+    msg.textContent='Please enter your email.';
+    msg.style.display='block';
+    return;
+  }
+  msg.textContent='✓ You\'re subscribed!';
+  msg.style.display='block';
+  input.value='';
+}
+window.openDemoModal = function(){
+  window.location.href='mailto:partnerships@kayopulse.com?subject=Book%20a%20Demo';
+};
+</script>
+</body>
+</html>
